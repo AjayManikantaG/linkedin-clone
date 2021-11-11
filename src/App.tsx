@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-import Counter from './components/Counter';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <h1>This is ajay</h1>
-      <Counter message="This is my first title"/>
+      <Header badges={true} />
     </div>
   );
 }
