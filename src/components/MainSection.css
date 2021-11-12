@@ -1,3 +1,10 @@
 .main__section {
-  background-color: hsl(0 0% 0% / 0.9);
+  background-color: rgb(249, 249, 249);
+  height: 100vh;
+}
+
+.main__container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
