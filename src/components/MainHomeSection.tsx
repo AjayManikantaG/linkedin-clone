@@ -1,8 +1,8 @@
 import React from 'react';
-import './MainSection.css';
-import MainSideBarLeft from './MainSideBarLeft';
+import './MainHomeSection.css';
+import MainSideBarLeft from './HomeSideBarLeft';
 
-function MainSection() {
+function MainHomeSection() {
   return (
     <main className='main__section'>
       <div className='main__container'>
@@ -12,4 +12,4 @@ function MainSection() {
   );
 }
 
-export default MainSection;
+export default MainHomeSection;
