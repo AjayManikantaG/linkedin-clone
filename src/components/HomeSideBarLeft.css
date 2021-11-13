@@ -61,3 +61,25 @@
 .home__left-postview p:last-child {
   color: hsl(210 90% 40%);
 }
+
+.home__leftrecent {
+  border: 2px solid rgb(223, 223, 223);
+  margin-top: 1rem;
+  padding: 0.6rem;
+  border-radius: 7px;
+}
+
+.home__leftrecent h5 {
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 0.4rem;
+}
+
+.home__leftrecentgroups {
+  font-size: 12px;
+}
+
+.home__leftrecentgroups span {
+  margin-left: 0.5rem;
+  font-weight: 400;
+}

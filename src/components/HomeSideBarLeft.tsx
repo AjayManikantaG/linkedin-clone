@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomeSideBarLeft.css';
+import { FaRecycle } from 'react-icons/fa';
 
 function MainSideBarLeft() {
   const role: string = 'Senior associate consultant at Infosys';
@@ -37,7 +38,34 @@ function MainSideBarLeft() {
           </div>
         </div>
       </div>
-      <div className='home__leftrecent'></div>
+      <div className='home__leftrecent'>
+        <h5>Recent</h5>
+        <div className='home__leftrecentgroups'>
+          <FaRecycle className='home__recentgroupicons' />
+          <span>Worldwide flutter - WWF </span>
+        </div>
+        <div className='home__leftrecentgroups'>
+          <FaRecycle className='home__recentgroupicons' />
+          <span>AWS Masters</span>
+        </div>
+
+        <div className='home__leftrecentgroups'>
+          <FaRecycle className='home__recentgroupicons' />
+          <span>How to migrate 100 ... </span>
+        </div>
+        <div className='home__leftrecentgroups'>
+          <FaRecycle className='home__recentgroupicons' />
+          <span>Angular Club - Devleopers </span>
+        </div>
+        <div className='home__leftrecentgroups'>
+          <FaRecycle className='home__recentgroupicons' />
+          <span>BuildwithAI Global hack</span>
+        </div>
+        <div className='home__leftrecentgroups'>
+          <FaRecycle className='home__recentgroupicons' />
+          <span>React Developers</span>
+        </div>
+      </div>
     </aside>
   );
 }
