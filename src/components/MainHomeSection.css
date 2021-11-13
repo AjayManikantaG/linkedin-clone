@@ -1,10 +1,6 @@
-.main__section {
-  background-color: rgb(249, 249, 249);
-  height: 100vh;
-}
-
 .main__container {
   display: flex;
   width: 80%;
   margin: 0 auto;
+  justify-content: space-between;
 }
