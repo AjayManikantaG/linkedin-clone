@@ -1,3 +1,29 @@
 .home__news {
-  width: 30%;
+  width: 28%;
+  margin-left: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+.home__news h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.home__news ul {
+  list-style: inside;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.home__news ul li {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 0.6rem;
+}
+
+.home__news ul p {
+  font-size: 0.7rem;
+  margin-left: 1.1rem;
 }
