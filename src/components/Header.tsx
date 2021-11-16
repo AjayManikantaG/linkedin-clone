@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import {
   FaSearch,
@@ -9,6 +10,7 @@ import {
   FaBell,
   FaJenkins,
 } from 'react-icons/fa';
+import { UpdateContext } from '../App';
 
 type HeaderProps = {
   badges: boolean;
@@ -16,6 +18,7 @@ type HeaderProps = {
 
 const Header = (props: HeaderProps) => {
   const [isClicked, setIsClicked] = useState(1);
+  const { increment } = useContext(UpdateContext);
 
   return (
     <div className='header'>
@@ -34,60 +37,75 @@ const Header = (props: HeaderProps) => {
 
         {/* menu icons */}
         <div className='header__right'>
-          <div
-            onClick={() => setIsClicked(1)}
-            className={`header__right-home ${
-              isClicked === 1 ? 'header__icon-enable' : ''
-            }`}
-          >
-            <FaHome className='header__icons' />
-            <p>Home</p>
-          </div>
-          <div
-            onClick={() => setIsClicked(2)}
-            className={`header__right-network ${
-              isClicked === 2 ? 'header__icon-enable' : ''
-            }`}
-          >
-            <FaNetworkWired className='header__icons' />
-            <p>My Network</p>
-          </div>
-          <div
-            onClick={() => setIsClicked(3)}
-            className={`header__right-jobs ${
-              isClicked === 3 ? 'header__icon-enable' : ''
-            }`}
-          >
-            <FaBlackTie className='header__icons' />
-            <p>Jobs</p>
-          </div>
-          <div
-            onClick={() => setIsClicked(4)}
-            className={`header__right-msg ${
-              isClicked === 4 ? 'header__icon-enable' : ''
-            }`}
-          >
-            <FaEnvelopeOpen className='header__icons' />
-            <p>Messaging</p>
-          </div>
-          <div
-            onClick={() => setIsClicked(5)}
-            className={`header__right-notify ${
-              isClicked === 5 ? 'header__icon-enable' : ''
-            }`}
-          >
-            <FaBell className='header__icons' />
-            <p>Notifications</p>
-          </div>
-          <div
-            onClick={() => setIsClicked(6)}
-            className={`header__right-me ${
-              isClicked === 6 ? 'header__icon-enable' : ''
-            }`}
-          >
-            <FaJenkins className='header__icons' />
-            <p>Me</p>
-          </div>
+          <Link className='header__linkstyle' to='/'>
+            <div
+              onClick={() => {
+                setIsClicked(1);
+                increment();
+              }}
+              className={`header__right-home ${
+                isClicked === 1 ? 'header__icon-enable' : ''
+              }`}
+            >
+              <FaHome className='header__icons' />
+              <p>Home</p>
+            </div>
+          </Link>
+          <Link className='header__linkstyle' to='/network'>
+            <div
+              onClick={() => setIsClicked(2)}
+              className={`header__right-network ${
+                isClicked === 2 ? 'header__icon-enable' : ''
+              }`}
+            >
+              <FaNetworkWired className='header__icons' />
+              <p>My Network</p>
+            </div>
+          </Link>
+          <Link className='header__linkstyle' to='/jobs'>
+            <div
+              onClick={() => setIsClicked(3)}
+              className={`header__right-jobs ${
+                isClicked === 3 ? 'header__icon-enable' : ''
+              }`}
+            >
+              <FaBlackTie className='header__icons' />
+              <p>Jobs</p>
+            </div>
+          </Link>
+          <Link className='header__linkstyle' to='/messaging'>
+            <div
+              onClick={() => setIsClicked(4)}
+              className={`header__right-msg ${
+                isClicked === 4 ? 'header__icon-enable' : ''
+              }`}
+            >
+              <FaEnvelopeOpen className='header__icons' />
+              <p>Messaging</p>
+            </div>
+          </Link>
+          <Link className='header__linkstyle' to='/notify'>
+            <div
+              onClick={() => setIsClicked(5)}
+              className={`header__right-notify ${
+                isClicked === 5 ? 'header__icon-enable' : ''
+              }`}
+            >
+              <FaBell className='header__icons' />
+              <p>Notifications</p>
+            </div>
+          </Link>
+          <Link className='header__linkstyle' to='/me'>
+            <div
+              onClick={() => setIsClicked(6)}
+              className={`header__right-me ${
+                isClicked === 6 ? 'header__icon-enable' : ''
+              }`}
+            >
+              <FaJenkins className='header__icons' />
+              <p>Me</p>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,0 +1,82 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+}
+
+.post__feedprofile {
+  display: flex;
+  flex-direction: row;
+  padding: 0.6rem;
+}
+
+.post__profilecontainer {
+  margin-left: 0.5rem;
+}
+
+.post__feedprofile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post__feedprofile > div p:first-child {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.post__feedprofile .post__profilework {
+  font-size: 12px;
+}
+
+.post__feedprofile > div p:last-child {
+  font-size: 12px;
+}
+
+.post__feedtext p {
+  margin-bottom: 0.4rem;
+  padding: 0 0.7rem;
+}
+
+.post__feedtext img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.post .post__feedlikes {
+  padding: 0 1rem;
+}
+
+.post__feedlikescontainer {
+  display: flex;
+  margin-top: 0.3rem;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0 0% 0% / 0.6);
+  margin-bottom: 0.4rem;
+  width: 100%;
+}
+
+.post__feedlikescontainer button {
+  padding: 0.6rem 1.2rem;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  outline: none;
+  background-color: white;
+  transition: all 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post__feedlikescontainer button:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.post__feedlikescontainer .post__feedemoji {
+  margin-right: 0.4rem;
+}

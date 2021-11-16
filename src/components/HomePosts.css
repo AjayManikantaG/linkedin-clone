@@ -1,5 +1,5 @@
 .home__posts {
-  width: 50%;
+  width: 45%;
   margin-left: 1rem;
 }
 
@@ -42,6 +42,7 @@
 .home__media-container div {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .home__media-container span {

@@ -1,0 +1,13 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts__loadingspinner {
+  text-align: center;
+}
+
+.posts__loadingspinner img {
+  width: 40px;
+  height: 40px;
+}
