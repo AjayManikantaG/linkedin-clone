@@ -4,6 +4,8 @@
   background-color: white;
   padding: 1rem;
   border-radius: 7px;
+  position: sticky;
+  top: 1rem;
 }
 
 .home__news h3 {
